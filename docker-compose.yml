@@ -12,6 +12,7 @@ services:
       CLAUDE_WEB_COOKIE: ${CLAUDE_WEB_COOKIE:-}
       OPENCLAW_AGENTS_DEFAULTS_MODEL: ${OPENCLAW_AGENTS_DEFAULTS_MODEL:-openai:gpt-4o}
       OPENCLAW_AGENTS_DEFAULTS_IMAGEMODEL: ${OPENCLAW_AGENTS_DEFAULTS_IMAGEMODEL:-openai:dall-e-3}
+      OPENCLAW_GATEWAY_CONTROLUI_ALLOWEDORIGINS: '["https://oc.whatyou.tech"]'
       TZ: ${OPENCLAW_TZ:-UTC}
     volumes:
       - openclaw-config:/home/node/.openclaw
